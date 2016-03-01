@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+    </head>
+    <body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <pre>
+            /*
+             *  EACH - pętla po tablicy JS
+             */
+            var tablica = ['a', 'b', 'c'];
+
+            console.group('pętla po tablicy')
+
+            $.each(tablica, function(i,v){
+               console.info(i, v);
+            });
+
+            $(tablica).each(function(i,v){
+                console.warn(i, v);
+            });
+
+            for(var i= 0, length = tablica.length; i < length; i++) {
+                console.log(i, tablica[i]);
+            }
+
+            console.groupEnd();
+
+            /*
+             *  EACH - pętla po obiekcie JS
+             */
+            var obiekt = {
+                a: 'jeden',
+                b: 'dwa',
+                c: 'trzy'
+            }
+
+            console.group('pętla po obiekcie')
+
+            $.each(obiekt, function(i,v){
+                console.info(i, v);
+            });
+
+            $(obiekt).each(function(i,v){   // błąd - aby przejść pętlą po obiekcie, musimy przekazać do each czysty obiekt JS, nie obiekt jQuery (obiekt jQuery jest zawsze talicą, zatem będzie to tablica z jednym obiektem)
+                console.warn(i, v);
+            });
+
+            for(i in obiekt) {
+                if(obiekt.hasOwnProperty(i)) {
+                    console.log(i, obiekt[i]);
+                }
+            }
+
+            console.groupEnd();
+
+
+            /*
+             *  DOCUMENT READY
+             */
+            $(document).ready(function(){
+               console.info('obiekt DOM został załadowany');
+            });
+
+
+            /*
+             *  WINDOW LOAD
+             */
+            $(window).load(function(){
+                console.info('w tym momencie załadowany jest obiekt DOM oraz wszytskie elementy strony - arkusze styli, obrazki, ramki i inne obiekty');
+            });
+
+
+            /*
+             *  jQuery objects vs. DOM Elements
+             */
+            var logo1 = $( "#logo" );
+            var logo1Elem = logo1.get( 0 );
+
+            var logo2 = $( "#logo" );
+            var logo2Elem = logo2.get( 0 );
+
+            console.info(logo1Elem === logo2Elem); // true
+            console.info(logo1 === logo2); // false
+        </pre>
+
+    </body>
+</html>

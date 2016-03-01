@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <ul id="lista">
+        <li class="odd first">jeden</li>
+        <li class="even">dwa</li>
+        <li class="odd">trzy</li>
+        <li class="even">cztery</li>
+        <li class="odd">
+            pięć
+            <div>
+                <p>
+                    <a href="">link</a>
+                </p>
+            </div>
+        </li>
+        <li class="even">
+            <input type="text" value="Jan" name="imie" id="imie"> <br>
+            <input type="text" value="Kowalski" name="nazwisko" id="imie"> <br>
+            <input type="checkbox" value="1" name="zgoda" id="zgoda"> <label for="zgoda">wyrażam zgodę</label>
+        </li>
+    </ul>
+
+    <pre>
+        console.info( $('*') );
+        console.info( $('li') );
+        console.info( $('li, div') );
+        console.info( $('li div') );
+        console.info( $('#imie, #nazwisko') );
+        console.info( $('.odd') );
+        console.info( $('.odd.first') );
+        console.info( $('#lista .first') );
+        console.info( $(':text') );
+        console.info( $(':checkbox') );
+        console.info( $('#lista li div p > a') );
+        console.info( $('input[value="Jan"]') );
+
+        var $lista = $('#lista');
+        var $listaLi = $lista.find('li');
+
+    </pre>
+
+</body>
+</html>
