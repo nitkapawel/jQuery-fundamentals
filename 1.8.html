@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <div class="container">
+        <div class="row" id="row">
+           <div class="col-md-6" id="leftCol">
+               <span class="txt">lewa</span>
+           </div>
+            <div class="col-md-6" id="rightCol">
+                <span class="txt">prawa</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var $row = $('#row');
+        $row.css('background-color', '#ccc').height(200).find('txt');
+        $row.find('.txt')
+            .css({
+                'display': 'inline-block',
+                'text-align': 'center',
+                'border-top': '1px solid #999',
+                'line-height': $row.height() + 'px'
+            })
+            .height( $row.height() )
+            .width( ( $row.find('div').width() ) );
+
+        $clonedRow = $row.clone();
+        $clonedRow.attr('id', 'clonedRow').find('.txt').text('komórki sklonowanego wiersza').end().insertAfter($row);
+
+
+        $('<img src="img/jquery-dimmensions.gif">').insertAfter('#clonedRow').each(function(i,v){
+            $(v).css({
+                display: 'block',
+                margin: '3em auto'
+            });
+        });
+
+    </script>
+
+
+
+
+</body>
+</html>

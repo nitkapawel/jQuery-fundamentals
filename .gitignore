@@ -15,6 +15,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# lock files
+.~lock.*
+
 # Windows shortcuts
 *.lnk
 ### JetBrains template

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <div class="container">
+        <table class="table" id="table" width="100%">
+            <tr>
+                <th>nagłówek 1</th>
+                <th>nagłówek 2</th>
+                <th>akcje</th>
+            </tr>
+            <tr>
+                <td>kolumna 1</td>
+                <td>kolumna 2</td>
+                <td>
+                    <button class="btn-default js-copy">Powiel</button>
+                    <button class="btn-warning js-remove">Usuń</button>
+                </td>
+            </tr>
+        </table>
+
+        <a href="" id="disableRemove" target="_blank" class="btn-danger">Zabroń usuwania wierszy</a>
+
+
+        <br><br><br><br>
+        <div id="rodzic">
+            <div id="dziecko">dziecko</div>
+        </div>
+
+    </div>
+
+    <script>
+
+        var $table = $('#table');
+
+        function bindEventsDirectlyToButtons(){
+
+            $('.js-copy').on('click.copyRow1', function(){
+                var $tr = $(this).closest('tr');
+                $tr.clone().insertAfter($tr);
+            });
+
+            $('.js-remove').on('click.removeRow1', function(){
+                $trs = $table.find('tr');
+                if($trs.length <= 2) {
+                    console.error('nie można usunąć ostatniego wiersza');
+                    return false;
+                } else {
+                    $(this).closest('tr').remove();
+                }
+            });
+        }
+        //bindEventsDirectlyToButtons();
+
+
+
+        function bindDelegateEvents(){
+
+            $table.on('click.copyRow2', '.js-copy', function(){
+                var $tr = $(this).closest('tr');
+                $tr.clone().insertAfter($tr);
+            }).on('click.removeRow2', '.js-remove', function(){
+                $trs = $table.find('tr');
+                if($trs.length <= 2) {
+                    console.error('nie można usunąć ostatniego wiersza');
+                    return false;
+                } else {
+                    $(this).closest('tr').remove();
+                }
+            });
+
+            $('#disableRemove').one('click', function(e){
+                e.preventDefault();
+
+                $table.off('click.removeRow2');
+                $(this).text('usuwanie wierszy jest zabronione');
+
+                $(this).on('click', function(e){
+                    e.preventDefault();
+                });
+            });
+        }
+        //bindDelegateEvents();
+
+
+        function bindParentChildEvents() {
+
+            $('#rodzic').on('click', function (e) {
+                console.log('kliknięto rodzica');
+            });
+            $('#dziecko').on('click', function (e) {
+                //e.stopPropagation();
+                console.log('kliknięto dziecko');
+            });
+
+            $('#rodzic').hover(
+                function(){
+                    $(this).css('color', '#00ffff');
+                },
+                function(){
+                    $(this).css('color', '#000');
+                }
+            )
+        }
+        //bindParentChildEvents();
+
+    </script>
+
+</body>
+</html>

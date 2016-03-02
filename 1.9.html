@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <script>
+
+        console.info($.trim('   tekst z wieloma białymi znakami            ') );
+
+        var tablica = [ 1, 2, 3, 5 ];
+        if ( $.inArray( 3, tablica ) !== -1 ) {
+            console.log( "znaleziono element" );
+        }
+
+        console.info('isArray (pusta tablica): ' + $.isArray( [] ) );
+        console.info('isArray (tablica): ' + $.isArray( [1,2,3] ) );
+        console.info('isArray (obiekt JS): ' + $.isArray( { 'a': 'b' } ) );
+        console.info('isArray (obiekt jQuery): ' + $.isArray($('body')) );
+
+        console.log($.isFunction(function() {}) );
+        console.log($.isFunction( (function(){})() ) );
+        console.log($.isFunction( (function(){ return function(){}; })() ) );
+        console.log($.isFunction( console.log ) );
+
+        console.warn( $.isNumeric( '10') );
+        console.warn( $.isNumeric( 10 ) );
+
+        console.info( $.type( true ) );
+        console.info( $.type( 3 ) );
+        console.info( $.type( "test" ) );
+        console.info( $.type( function() {} ) );
+        console.info( $.type( [] ) );
+        console.info( $.type( null ) );
+        console.info( $.type( /test/ ) );
+        console.info( $.type( new Date() ) );
+
+
+        var arr = [1,2,3,4,5,6,7,8,9,10];
+        var filteredArray = $.grep(arr, function( v, i ) {
+            return ( v >= 5 );
+        });
+        console.log(filteredArray);
+
+
+        var obj = $.parseJSON( '{ "name": "Jan", "surname": "Kowalski" }' );
+        console.info( obj.name === "Jan" && obj.surname === "Kowalski" );
+
+    </script>
+
+
+
+
+</body>
+</html>

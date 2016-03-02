@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <div class="container">
+        <ul class="list-unstyled" id="lista">
+            <li class="odd first">jeden</li>
+            <li class="even">dwa</li>
+            <li class="odd">trzy</li>
+            <li class="even">cztery</li>
+            <li class="odd">
+                pięć
+                <div>
+                    <p>
+                        <a href="" id="link">link</a>
+                    </p>
+                </div>
+            </li>
+            <li class="even">
+                <input type="text" value="Jan" name="imie" id="imie"> <br>
+                <input type="text" value="Kowalski" name="nazwisko" id="imie"> <br>
+                <input type="checkbox" value="1" name="zgoda" id="zgoda"> <label for="zgoda">wyrażam zgodę</label>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $("#lista")
+            .find("li")
+            .eq(2)
+                .text("nowy tekst dla trzeciego elementu listy")
+                .end()
+            .eq(0)
+                .html("nowy tekst dla pierwszego elementu listy")
+                .prop('disabled', true)
+                .addClass('new')
+                .css({
+                    color: '#005500',
+                    border: '1px solid #ff00ff'
+                });
+    </script>
+
+</body>
+</html>

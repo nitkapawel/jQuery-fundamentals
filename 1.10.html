@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <div id="div" data-test="aaa">content</div>
+
+    <script>
+        $('#div').data('test', 'bbb');
+        console.log($('#div').data('test'));
+        console.log($('#div').attr('data-test'));
+        $('#div').removeData('test');
+        console.info($('#div').data('test'));
+        console.info($('#div').attr('data-test'));
+
+
+        $('#div').data('myobject', {
+            a: 'jeden',
+            b: 'dwa'
+        });
+        var divDataObject = $('#div').data('myobject');
+        console.log(divDataObject.a);
+        console.log(divDataObject.b);
+
+
+
+        $('#div').data('myfunction', function(){ return 'wynik funkcji'; } );
+        var divFunction = $('#div').data('myfunction');
+        console.info( divFunction() );
+
+    </script>
+
+</body>
+</html>

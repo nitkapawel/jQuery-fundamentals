@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        html, body { height: 100%; }
+        form { background-color: #fafafa; padding: 20px 50px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <form action="" class="container" method="post" name="f1" id="f1">
+
+        <input value="" placeholder="Jak ci na imię?" class="input-lg" id="imie">
+        <div id="imieTxt"></div>
+
+    </form>
+
+    <script>
+
+        var $imieTxt = $('#imieTxt');
+        $('#imie').on('keyup', function(e){
+            $imieTxt.text( 'Cześć ' + this.value );
+            console.info(e);
+        });
+//        $('#imie').on('click', function(e){
+//            e.stopPropagation();
+//        });
+
+        $('#f1').on('submit', function(e){
+            e.preventDefault();
+            console.info('nie chcemy by Enter wysyłał formularz');
+        });
+
+
+
+        $('body').on('click', function(e){
+            console.log( e.pageX, e.pageY );
+            console.info('target: ', e.target);
+            console.warn('delegate target: ', e.delegateTarget);
+        });
+
+    </script>
+
+</body>
+</html>
