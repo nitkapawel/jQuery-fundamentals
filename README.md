@@ -1,3 +1,3 @@
 # jQuery-fundamentals
 
-Materia≥y szkoleniowe dla Software Development Academy
+Materia≈Çy szkoleniowe dla Software Development Academy
