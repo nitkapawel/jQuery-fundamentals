@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <div class="container">
+        <ul class="list-unstyled" id="lista">
+            <li class="odd first">jeden</li>
+            <li class="even">dwa</li>
+            <li class="odd">trzy</li>
+            <li class="even">cztery</li>
+            <li class="odd">
+                pięć
+                <div>
+                    <p>
+                        <a href="" id="link">link</a>
+                    </p>
+                </div>
+            </li>
+            <li class="even">
+                <input type="text" value="Jan" name="imie" id="imie"> <br>
+                <input type="text" value="Kowalski" name="nazwisko" id="imie"> <br>
+                <input type="checkbox" value="1" name="zgoda" id="zgoda"> <label for="zgoda">wyrażam zgodę</label>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+//        .add()
+//        .children()
+//        .closest()
+//        .end()
+//        .eq()
+//        .filter()
+//        .find()
+//        .first()
+//        .is()
+//        .map()
+//        .next()/prev()
+//        .nextUntil()/prevUntil()
+//        .nextAll()/prevAll()
+//        .not()
+//        .parent()/parents()/parentsUntil()
+
+        $('.even').add('.first').css('background-color', 'gray');
+
+        $('#imie').closest('li').css('background-color', 'yellow').end().val('Adam');
+
+        $('li').eq(3).css({
+            'background-color': '#000',
+            color: '#fff'
+        });
+
+        $('li').map(function(){
+           return $(this).is('.even') ? this : null;
+        }).css('font-weight', 'bold');
+
+
+
+        console.info( $('#link').parent() );
+        console.info( $('#link').parents() )
+        console.info( $('#link').parentsUntil('body') );
+
+        console.info( $('li:first').next() );
+        console.info( $('li:first').nextAll() );
+        console.info( $('li:first').nextUntil('.odd') );
+
+        console.info( $('li').not('.odd') );
+
+    </script>
+
+</body>
+</html>
