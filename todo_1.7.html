@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        .blue td {
+            background-color: blue;
+        }
+        .red td {
+            background-color: red;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+<script>
+    // tutaj zaczynamy pisać skrypt
+</script>
+
+<div class="container">
+
+    <div class="bg-info panel-body">
+        <p>Kod zaczynamy pisać w oznaczonym miejscu - zaraz po otwarciu znacznika body.</p>
+        <ul>
+            <li>Do wiersza nagłówkowego dodaj kolumnę zatytułowaną 'akcje'</li>
+            <li>
+                Do wszytskich pozostałych wierszy dodaj kolumnę razem z przyciskami:<br>
+                o klasie '.btn-default' z tekstem 'powiel' <br>
+                o klasie '.btn-danger' z tekstem 'usuń'
+            </li>
+            <li>
+                Wybierz ostatni wiersz, sklonuj go, dodaj na koniec tabeli i dodaj mu klasę 'clonedLast'
+            </li>
+            <li>
+                Zmień nazwy inputów z 'imie[]' na 'name[]' oraz 'nazwisko' na 'surname'
+            </li>
+        </ul>
+    </div>
+
+
+    <table class="table" id="table" width="100%">
+        <tr class="headerRow">
+            <th class="text-info">nagłówek 1</th>
+            <th class="text-info">nagłówek 2</th>
+            <th class="text-info">nagłówek 3</th>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Jan" type="text">
+                <input class="input-sm text-danger" name="imie[]" value="Kowalski" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Adam" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Nowak" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Janusz" type="text">
+                <input class="input-sm text-danger" name="nazwisko[]" value="Kryszak" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Ewa" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Kowalska" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Janina" type="text">
+                <input class="input-sm text-info text-warning" name="nazwisko[]" value="Nowa" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Grzegorz" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Stary" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Jan" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Maria" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Maria" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Kowal" type="text">
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+<script src="js/otherScripts.js"></script>
+</body>
+</html>

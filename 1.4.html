@@ -31,7 +31,7 @@
         </li>
     </ul>
 
-    <pre>
+    <script>
         console.info( $('*') );
         console.info( $('li') );
         console.info( $('li, div') );
@@ -45,10 +45,17 @@
         console.info( $('#lista li div p > a') );
         console.info( $('input[value="Jan"]') );
 
+        // cache
         var $lista = $('#lista');
         var $listaLi = $lista.find('li');
 
-    </pre>
+        $listaLi.each(function(i,v){
+           if($(v).hasClass('even')) {
+               console.log('znaleziony element jest parzysty');
+           }
+        });
+
+    </script>
 
 </body>
 </html>

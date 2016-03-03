@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        .container {
+            margin-top: 100px;
+            position: relative;
+        }
+        #cube {
+            background-color: #333;
+            left: 0;
+            height: 100px;
+            position: absolute;
+            width: 100px;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+<script>
+    // tutaj zaczynamy pisać skrypt
+</script>
+
+<div class="container">
+
+    <div class="bg-info panel-body">
+        <br>
+        <ul>
+            <li>Ustaw wysokość i szerokość elementu #cube na 1/4 szerokości rodzica</li>
+            <li>Nie zmieniając bezpośrednio reguł css w nałówku, ustaw #cube na środku ekranu, w pionie i w poziomie (zwróć uwagę na relatywną pozycję rodzica i jego margines)</li>
+            <li>Zmień kolor tła #cube na żółty, umieść w nim element span z tekstem 'hello' który będzie wyśrodkowany w pionie i poziomie względem #cube (metoda dowolna)</li>
+            <li>Zaloguj do konsoli pozycję top,left lewego górnego rogu #cube względem okna</li>
+            <li>Zaloguj do konsoli pozycję top,left lewego górnego rogu #cube względem rodzica</li>
+        </ul>
+    </div>
+
+
+    <div id="cube"></div>
+
+</div>
+
+
+
+<script src="js/otherScripts.js"></script>
+</body>
+</html>

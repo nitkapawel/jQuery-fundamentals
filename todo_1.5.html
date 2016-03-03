@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        .blue td {
+            background-color: blue;
+        }
+        .red td {
+            background-color: red;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+<script>
+    // tutaj zaczynamy pisać skrypt
+</script>
+
+<div class="container">
+
+    <div class="bg-info panel-body">
+        <p>Kod zaczynamy pisać w oznaczonym miejscu - zaraz po otwarciu znacznika body.</p>
+        <ol>
+            <li>Wybierz z tabeli wszytskie nieparzyste wiersze, (nie uwzględniamy przy tym pierwszego wiersza z nagłówkiem)</li>
+            <li>Wybierz z tabeli wszystkie dzieci nieparzystych wierszy</li>
+            <li>Wybierz z tabeli wszystkie inputy gdzie imię == 'Jan'</li>
+            <li>Wybierz z tabeli wszystkie inputy o klasie 'text-info'</li>
+            <li>Wybierz z tabeli wszystkie inputy z nazwiskami, które nie posiadają klasy 'text-danger'</li>
+        </ol>
+    </div>
+
+
+    <table class="table" id="table" width="100%">
+        <tr class="headerRow">
+            <th class="text-info">nagłówek 1</th>
+            <th class="text-info">nagłówek 2</th>
+            <th class="text-info">nagłówek 3</th>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Jan" type="text">
+                <input class="input-sm text-danger" name="imie[]" value="Kowalski" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Adam" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Nowak" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Janusz" type="text">
+                <input class="input-sm text-danger" name="nazwisko[]" value="Kryszak" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Ewa" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Kowalska" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Janina" type="text">
+                <input class="input-sm text-info text-warning" name="nazwisko[]" value="Nowa" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Grzegorz" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Stary" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Jan" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Maria" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>kolumna 1</td>
+            <td>kolumna 2</td>
+            <td>
+                <input class="input-sm" name="imie[]" value="Maria" type="text">
+                <input class="input-sm text-info" name="nazwisko[]" value="Kowal" type="text">
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+<script src="js/otherScripts.js"></script>
+</body>
+</html>
