@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        .navbar {
+            margin-top: 3em;
+            margin-bottom: 0;
+            -webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
+            border-bottom: 0 none;
+        }
+        .navbar .pull-right {
+            margin-top: 1em;
+        }
+        .navbar .pull-right input {
+            margin-left: 1em;
+        }
+        .navbar .active {
+            background-color: #e7e7e7 !important;
+            color: #555555 !important;
+        }
+        .tabs-content-cont {
+            border: 1px solid #e7e7e7;
+        }
+        .tab-content-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <script>
+        // tutaj zaczynamy pisać skrypt
+    </script>
+
+    <div class="container">
+
+        <div class="bg-info panel-body">
+            <br>
+            <ul>
+                <li>Do elementu #myTabsContainer przypnij oddelegowany event służący do przełączania zakładek</li>
+                <li>Zastosuj wybrany efekt przejścia w zależności od wybranego przełącznika</li>
+                <li>Jeśli zakładka jest już aktywna, nie powinna zostać przeładowana</li>
+                <li>Znajdź sposób na to, aby przy szybkim przełączaniu zakładek nie dopuścić do sytuacji, gdy dwa pola z treścią będą widoczne jednocześnie.</li>
+                <li>
+                    <b>+</b> Po zmianie zakładki, zapamiętaj w localStorage która z nich była ostatnio otwarta i przy ponownym załadowaniu strony otwórz ostatnio otwartą zakładkę - bez żadnej animacji!
+                </li>
+            </ul>
+        </div>
+
+
+        <form id="myTabsContainer">
+            <nav class="navbar navbar-default" id="navbar">
+                <div class="container-fluid">
+                    <div class="pull-right" id="js-radio-cont">
+                        <input type="radio" name="effect" value="fade" id="effectFade" checked="checked"> <label>Fade In/Out</label>
+                        <input type="radio" name="effect" value="slide" id="effectSlide"> <label>Slide Up/Down</label>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#" class="active js-change-tab">Pierwsza zakładka</a>
+                        </li>
+                        <li>
+                            <a href="#" class="js-change-tab">Druga zakładka</a>
+                        </li>
+                        <li>
+                            <a href="#" class="js-change-tab">Trzecia zakładka</a>
+                        </li>
+                        <li>
+                            <a href="#" class="js-change-tab">Czwarta zakładka</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="panel-primary tabs-content-cont">
+                <div class="container-fluid">
+                    <div class="js-tabs-content">
+                        <h3>Treść 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.</p>
+                    </div>
+                    <div class="js-tabs-content tab-content-hidden">
+                        <h3>Treść 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.</p>
+                    </div>
+                    <div class="js-tabs-content tab-content-hidden">
+                        <h3>Treść 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.</p>
+                    </div>
+                    <div class="js-tabs-content tab-content-hidden">
+                        <h3>Treść 4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>

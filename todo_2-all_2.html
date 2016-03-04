@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        .question {
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+        }
+        #faqList {
+            margin-top:3em;
+        }
+        .open .answer {
+            display: block;
+        }
+        #faqList li {
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <script>
+        // tutaj zaczynamy pisać skrypt
+    </script>
+
+    <div class="container">
+
+        <div class="bg-info panel-body">
+            <br>
+            <ul>
+                <li>Po kliknięciu w pytanie, rozwiń jego odpowiedź. Jeśli jest ona widoczna, odpowiedź powinna zostać ukryta.</li>
+                <li><b>+</b> Zadanie da się rozwiązać w jednej linijce</li>
+            </ul>
+        </div>
+
+        <div class="row" id="faqList">
+            <div class="col-md-10 col-md-offset-1">
+                <ul class="list-unstyled">
+                    <li class="list-group-item open">
+                        <b class="question">Pytanie pierwsze</b>
+                        <p class="answer">
+                            Odpowiedź pierwsza. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <b class="question">Pytanie drugie</b>
+                        <p class="answer">
+                            Odpowiedź druga. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <b class="question">Pytanie trzecie</b>
+                        <p class="answer">
+                            Odpowiedź trzecia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <b class="question">Pytanie czwarte</b>
+                        <p class="answer">
+                            Odpowiedź czwarta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <b class="question">Pytanie piąte</b>
+                        <p class="answer">
+                            Odpowiedź piąta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sed purus ac consequat. Vivamus pretium eleifend maximus. Curabitur rhoncus dictum ligula eget sagittis. Nullam vel risus in nunc tincidunt maximus. Proin consectetur, lacus in auctor finibus, velit libero venenatis lectus, sit amet gravida erat dui in magna. Praesent vestibulum sem quis tincidunt convallis. Vestibulum eget aliquam nisi, nec interdum justo. Aliquam a ultricies orci. Vestibulum ornare enim id ex ullamcorper volutpat. Nullam eget sodales nibh, vel placerat justo. Fusce eget consequat lorem. Vestibulum consectetur lacus eu fringilla sollicitudin. Aenean volutpat sit amet elit sit amet tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed varius nec magna sit amet blandit. Fusce posuere egestas risus, eget commodo metus viverra et.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
