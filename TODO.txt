@@ -1,0 +1,5 @@
+do przygotowania:
+- zadanie z walidacją formularza
+- zadanie z własnym pluginem - limit znaków w textarea
+- zadanie - mini TODO
+- zadanie - slider zdjęć

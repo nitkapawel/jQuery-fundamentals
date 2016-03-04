@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <form id="f1" action="" method="post" name="f1">
+        <ul class="list-unstyled">
+            <li>
+                <input name="imie" id="imie" placeholder="Imię">
+            </li>
+            <li>
+                <input name="nazwisko" id="nazwisko" placeholder="Nazwisko">
+            </li>
+            <li>
+                <input type="submit" id="submit" value="wyślij" class="btn-default">
+            </li>
+        </ul>
+    </form>
+
+    <script>
+
+        $('#f1').on('submit', function(e){
+            e.preventDefault();
+
+            var objToSend = $('#f1').serializeArray();
+            objToSend.parametr1 = 'wartość 1';
+            objToSend.parametr2 = 'wartość 2';
+
+            $.ajax({
+                url: '/szukaj.php',
+                dataType: 'json',
+                method: "POST", // type is alternative (below 1.9.0 use type)
+                scriptCharsetString: 'utf-8',
+                data: objToSend,
+                success: function( data ) {
+                    console.info(data);
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    //console.log(errorThrown.number);
+                    //console.log(errorThrown.description);
+                },
+                complete: function(){
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>

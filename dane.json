@@ -1,0 +1,319 @@
+{
+	first : [{
+		"id" : "19968",
+		"hotelId" : "1887",
+		"name" : "Sultan Beach",
+		"urlName" : "sultan-beach",
+		"countryName" : "Egipt",
+		"regionName" : "Hurghada",
+		"type" : "hotel"
+	}, {
+		"id" : "19971",
+		"hotelId" : "1715",
+		"name" : "Sultan Garden",
+		"urlName" : "sultan-garden",
+		"countryName" : "Egipt",
+		"regionName" : "Sharm el Sheikh",
+		"type" : "hotel"
+	}, {
+		"id" : "19972",
+		"hotelId" : "24194",
+		"name" : "Sultan Of Dreams",
+		"urlName" : "sultan-of-dreams",
+		"countryName" : "Turcja",
+		"regionName" : "Riwiera Turecka",
+		"type" : "hotel"
+	}, {
+		"id" : "19973",
+		"hotelId" : "15476",
+		"name" : "Sultan Of Side",
+		"urlName" : "sultan-of-side",
+		"countryName" : "Turcja",
+		"regionName" : "Riwiera Turecka",
+		"type" : "hotel"
+	}, {
+		"id" : "19974",
+		"hotelId" : "17254",
+		"name" : "Sultan Sands Island Resort",
+		"urlName" : "sultan-sands-island-resort",
+		"countryName" : "Tanzania",
+		"regionName" : "Zanzibar",
+		"type" : "hotel"
+	}, {
+		"id" : "19976",
+		"hotelId" : "16965",
+		"name" : "Sultan Sipahi Resort",
+		"urlName" : "sultan-sipahi-resort",
+		"countryName" : "Turcja",
+		"regionName" : "Riwiera Turecka",
+		"type" : "hotel"
+	}],
+
+	second : [{
+		"id" : "10865",
+		"hotelId" : "24550",
+		"name" : "Great Parnassus",
+		"urlName" : "great-parnassus",
+		"countryName" : "Meksyk",
+		"regionName" : "Jukatan",
+		"type" : "hotel"
+	}, {
+		"id" : "10866",
+		"hotelId" : "13924",
+		"name" : "Grecian Bay",
+		"urlName" : "grecian-bay",
+		"countryName" : "Cypr",
+		"regionName" : "Cypr Południowy",
+		"type" : "hotel"
+	}, {
+		"id" : "10867",
+		"hotelId" : "16962",
+		"name" : "Grecian Park",
+		"urlName" : "grecian-park",
+		"countryName" : "Cypr",
+		"regionName" : "Cypr Południowy",
+		"type" : "hotel"
+	}, {
+		"id" : "10868",
+		"hotelId" : "11815",
+		"name" : "Grecian Sands",
+		"urlName" : "grecian-sands",
+		"countryName" : "Cypr",
+		"regionName" : "Cypr Południowy",
+		"type" : "hotel"
+	}, {
+		"id" : "10891",
+		"hotelId" : "8599",
+		"name" : "Gredler",
+		"urlName" : "gredler",
+		"countryName" : "Austria",
+		"regionName" : "Dolina Zillertal",
+		"type" : "hotel"
+	}, {
+		"id" : "10893",
+		"hotelId" : "6415",
+		"name" : "Green Bay",
+		"urlName" : "green-bay",
+		"countryName" : "Grecja",
+		"regionName" : "Thassos",
+		"type" : "hotel"
+	}, {
+		"id" : "10895",
+		"hotelId" : "11274",
+		"name" : "Green Beach Resort",
+		"urlName" : "green-beach-resort",
+		"countryName" : "Turcja",
+		"regionName" : "Wybrzeże Egejskie",
+		"type" : "hotel"
+	}, {
+		"id" : "10897",
+		"hotelId" : "25370",
+		"name" : "Green Bungalows",
+		"urlName" : "green-bungalows",
+		"countryName" : "Cypr",
+		"regionName" : "Cypr Południowy",
+		"type" : "hotel"
+	}, {
+		"id" : "10898",
+		"hotelId" : "25051",
+		"name" : "Green Field",
+		"urlName" : "green-field",
+		"countryName" : "Hiszpania",
+		"regionName" : "Gran Canaria",
+		"type" : "hotel"
+	}, {
+		"id" : "10900",
+		"hotelId" : "21007",
+		"name" : "Green Garden",
+		"urlName" : "green-garden",
+		"countryName" : "Hiszpania",
+		"regionName" : "Majorka",
+		"type" : "hotel"
+	}, {
+		"id" : "10905",
+		"hotelId" : "24276",
+		"name" : "Green Life Beach Resort",
+		"urlName" : "green-life-beach-resort",
+		"countryName" : "Bułgaria",
+		"regionName" : "Słoneczny Brzeg",
+		"type" : "hotel"
+	}, {
+		"id" : "10906",
+		"hotelId" : "21057",
+		"name" : "Green Max",
+		"urlName" : "green-max",
+		"countryName" : "Turcja",
+		"regionName" : "Riwiera Turecka",
+		"type" : "hotel"
+	}, {
+		"id" : "10907",
+		"hotelId" : "15406",
+		"name" : "Green Nature",
+		"urlName" : "green-nature",
+		"countryName" : "Turcja",
+		"regionName" : "Wybrzeże Egejskie",
+		"type" : "hotel"
+	}, {
+		"id" : "10914",
+		"hotelId" : "25424",
+		"name" : "Green Park",
+		"urlName" : "green-park",
+		"countryName" : "Grecja",
+		"regionName" : "Skiathos",
+		"type" : "hotel"
+	}, {
+		"id" : "10917",
+		"hotelId" : "11900",
+		"name" : "Green Park Resort",
+		"urlName" : "green-park-resort",
+		"countryName" : "Tajlandia",
+		"regionName" : "Bangkok",
+		"type" : "hotel"
+	}, {
+		"id" : "10916",
+		"hotelId" : "20051",
+		"name" : "Green Park Resort",
+		"urlName" : "green-park-resort",
+		"countryName" : "Włochy",
+		"regionName" : "Toskania",
+		"type" : "hotel"
+	}, {
+		"id" : "10924",
+		"hotelId" : "583",
+		"name" : "Greenwood Resort",
+		"urlName" : "greenwood-resort",
+		"countryName" : "Turcja",
+		"regionName" : "Riwiera Turecka",
+		"type" : "hotel"
+	}, {
+		"id" : "10925",
+		"hotelId" : "10129",
+		"name" : "Greif",
+		"urlName" : "greif",
+		"countryName" : "Włochy",
+		"regionName" : "Alta Badia",
+		"type" : "hotel"
+	}, {
+		"id" : "10926",
+		"hotelId" : "13690",
+		"name" : "Grenada",
+		"urlName" : "grenada",
+		"countryName" : "Bułgaria",
+		"regionName" : "Słoneczny Brzeg",
+		"type" : "hotel"
+	}],
+
+	third : [{
+		"id" : "6193",
+		"hotelId" : "8264",
+		"name" : "Beach Albatros",
+		"urlName" : "beach-albatros",
+		"countryName" : "Egipt",
+		"regionName" : "Sharm el Sheikh",
+		"type" : "hotel"
+	}, {
+		"id" : "6195",
+		"hotelId" : "21704",
+		"name" : "Beach Albatros Agadir",
+		"urlName" : "beach-albatros-agadir",
+		"countryName" : "Maroko",
+		"regionName" : "Agadir",
+		"type" : "hotel"
+	}, {
+		"id" : "6196",
+		"hotelId" : "20321",
+		"name" : "Beach Albatros Resort",
+		"urlName" : "beach-albatros-resort",
+		"countryName" : "Egipt",
+		"regionName" : "Hurghada",
+		"type" : "hotel"
+	}, {
+		"id" : "6197",
+		"hotelId" : "24634",
+		"name" : "Beach Boutique House",
+		"urlName" : "beach-boutique-house",
+		"countryName" : "Tajlandia",
+		"regionName" : null,
+		"type" : "hotel"
+	}, {
+		"id" : "6201",
+		"hotelId" : "21009",
+		"name" : "Beach Club Font De Sa Cala",
+		"urlName" : "beach-club-font-de-sa-cala",
+		"countryName" : "Hiszpania",
+		"regionName" : "Majorka",
+		"type" : "hotel"
+	}, {
+		"id" : "6203",
+		"hotelId" : "17779",
+		"name" : "Beach Palace",
+		"urlName" : "beach-palace",
+		"countryName" : "Meksyk",
+		"regionName" : "Jukatan",
+		"type" : "hotel"
+	}, {
+		"id" : "6205",
+		"hotelId" : "18015",
+		"name" : "Beach Rotana & Towers",
+		"urlName" : "beach-rotana-towers",
+		"countryName" : "Emiraty Arabskie",
+		"regionName" : null,
+		"type" : "hotel"
+	}, {
+		"id" : "6207",
+		"hotelId" : "21125",
+		"name" : "Beachclub Serenity Bay",
+		"urlName" : "beachclub-serenity-bay",
+		"countryName" : "Bułgaria",
+		"regionName" : "Słoneczny Brzeg",
+		"type" : "hotel"
+	}, {
+		"id" : "6208",
+		"hotelId" : "3909",
+		"name" : "Beachcomber Le Canonnier",
+		"urlName" : "beachcomber-le-canonnier",
+		"countryName" : "Mauritius",
+		"regionName" : null,
+		"type" : "hotel"
+	}, {
+		"id" : "6209",
+		"hotelId" : "7074",
+		"name" : "Beachcomber Le Victoria",
+		"urlName" : "beachcomber-le-victoria",
+		"countryName" : "Mauritius",
+		"regionName" : null,
+		"type" : "hotel"
+	}, {
+		"id" : "6211",
+		"hotelId" : "8162",
+		"name" : "Beachcomber Shandrani",
+		"urlName" : "beachcomber-shandrani",
+		"countryName" : "Mauritius",
+		"regionName" : null,
+		"type" : "hotel"
+	}, {
+		"id" : "6212",
+		"hotelId" : "8164",
+		"name" : "Beachcomber Trou Aux Biches",
+		"urlName" : "beachcomber-trou-aux-biches",
+		"countryName" : "Mauritius",
+		"regionName" : null,
+		"type" : "hotel"
+	}, {
+		"id" : "6213",
+		"hotelId" : "1554",
+		"name" : "Beaches Negril",
+		"urlName" : "beaches-negril",
+		"countryName" : "Jamajka",
+		"regionName" : null,
+		"type" : "hotel"
+	}, {
+		"id" : "6214",
+		"hotelId" : "1556",
+		"name" : "Beaches Sandy Bay",
+		"urlName" : "beaches-sandy-bay",
+		"countryName" : "Jamajka",
+		"regionName" : null,
+		"type" : "hotel"
+	}]
+}
