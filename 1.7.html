@@ -35,12 +35,23 @@
     </div>
 
     <script>
+
+
+//        $('#row').html('<div id="hello1">Hello World!</div>');
+//        $('#row').append('<div id="hello2">Hello World (na koniec elementu)!</div>');
+//        $('#row').prepend('<div id="hello3">Hello World (na początek elementu)!</div>');
+
+
+
         var $row = $('#row');
 
         $(' <div class="col-md-6" id="leftCol"> <span class="txt">lewa</span> </div>').appendTo($row).each(function(i,v){
             $(v).clone().attr('id', 'rightCol').find('.txt').text('prawa').end().insertAfter(v);
         });
 
+//        $(' <div class="col-md-6" id="leftCol"> <span class="txt">lewa</span> </div>').appendTo($row);
+//        var $clone = $('#leftCol').clone().attr('id', 'rightCol').find('.txt').text('prawa')
+//        $clone.insertAfter('#leftCol');
     </script>
 
 
