@@ -11,9 +11,9 @@
 <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
 
-    <div id="div" data-test="aaa">content</div>
+    <div id="div">content</div>
 
-    <script>
+    <pre>
         $('#div').data('test', 'bbb');
         console.log($('#div').data('test'));
         console.log($('#div').attr('data-test'));
@@ -36,7 +36,7 @@
         var divFunction = $('#div').data('myfunction');
         console.info( divFunction() );
 
-    </script>
+    </pre>
 
 </body>
 </html>

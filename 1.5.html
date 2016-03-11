@@ -33,49 +33,54 @@
         </ul>
     </div>
 
-    <script>
-//        .add()
-//        .children()
-//        .closest()
-//        .end()
-//        .eq()
-//        .filter()
-//        .find()
-//        .first()
-//        .is()
-//        .map()
-//        .next()/prev()
-//        .nextUntil()/prevUntil()
-//        .nextAll()/prevAll()
-//        .not()
-//        .parent()/parents()/parentsUntil()
 
-        $('.even').add('.first').css('background-color', 'gray');
-
-        $('#imie').closest('li').css('background-color', 'yellow').end().val('Adam');
-
-        $('li').eq(3).css({
-            'background-color': '#000',
-            color: '#fff'
-        });
-
-        $('li').map(function(){
-           return $(this).is('.even') ? this : null;
-        }).css('font-weight', 'bold');
+<pre>
+    //        .add()
+    //        .children()
+    //        .closest()
+    //        .end()
+    //        .eq()
+    //        .filter()
+    //        .find()
+    //        .first()
+    //        .is()
+    //        .map()
+    //        .next()/prev()
+    //        .nextUntil()/prevUntil()
+    //        .nextAll()/prevAll()
+    //        .not()
+    //        .parent()/parents()/parentsUntil()
 
 
 
-        console.info( $('#link').parent() );
-        console.info( $('#link').parents() )
-        console.info( $('#link').parentsUntil('body') );
 
-        console.info( $('li:first').next() );
-        console.info( $('li:first').nextAll() );
-        console.info( $('li:first').nextUntil('.odd') );
 
-        console.info( $('li').not('.odd') );
+    $('.even').add('.first').css('background-color', 'gray');
 
-    </script>
+    $('#imie').closest('li').css('background-color', 'yellow').end().val('Adam');
+
+    $('li').eq(3).css({
+        'background-color': '#000',
+        color: '#fff'
+    });
+
+    $('li').map(function(){
+        return $(this).is('.even') ? this : null;
+    }).css('font-weight', 'bold');
+
+
+
+    console.info( $('#link').parent() );
+    console.info( $('#link').parents() )
+    console.info( $('#link').parentsUntil('body') );
+
+    console.info( $('li:first').next() );
+    console.info( $('li:first').nextAll() );
+    console.info( $('li:first').nextUntil('.odd') );
+
+    console.info( $('li').not('.odd') );
+
+</pre>
 
 </body>
 </html>

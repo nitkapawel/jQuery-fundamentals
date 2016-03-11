@@ -49,9 +49,9 @@
             $(v).clone().attr('id', 'rightCol').find('.txt').text('prawa').end().insertAfter(v);
         });
 
-//        $(' <div class="col-md-6" id="leftCol"> <span class="txt">lewa</span> </div>').appendTo($row);
-//        var $clone = $('#leftCol').clone().attr('id', 'rightCol').find('.txt').text('prawa')
-//        $clone.insertAfter('#leftCol');
+        $(' <div class="col-md-6" id="leftCol"> <span class="txt">lewa</span> </div>').appendTo($row);
+        var $clone = $('#leftCol').clone().attr('id', 'rightCol').find('.txt').text('prawa')
+        $clone.insertAfter('#leftCol');
     </script>
 
 
@@ -100,8 +100,9 @@
         function copyButton(elem){
             if( !$(elem).hasClass('copied') ){
                 var $clone = $(elem).clone().attr('id', elem.id + '2').appendTo('#copyTarget').removeAttr('onclick');
+                $clone.addClass('xxx');
                 $clone.attr('onclick', '$(this).remove();');    // w dalszej części poznamy lepszy sposób
-                $(elem).addClass('copied');
+                //$(elem).addClass('copied');
             }
             else{
                 console.info('element został już skopiowany')

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <script>
+        // tutaj zaczynamy pisać skrypt
+    </script>
+
+    <div class="container">
+
+        <div class="bg-info panel-body">
+            <br>
+            <ul>
+                <li>Po załadowaniu strony zamień wszytskie elemnty (replaceWith) span na &lt;a&gt; w atrybut href wstawiając wartość z data-url. Dodaj do wszystkich linków również atrybut target="_blank"</li>
+                <li>Przypnij pod linki zdarzenie, które po kliknięciu nie otworzy nowej strony, ale w divie #txt ustawi tekst "Jedziemy do [nazwa państwa w dopełniaczu]!" (np. Jedziemy do Egiptu!)</li>
+            </ul>
+        </div>
+
+        <br><br><br>
+
+        <ol>
+           <li>
+               <span data-url="http://www.wakacje.pl/wczasy/egipt" data-dopelniacz="Egiptu">Egipt</span>
+           </li>
+            <li>
+                <span data-url="http://www.wakacje.pl/wczasy/grecja" data-dopelniacz="Grecji">Grecja</span>
+            </li>
+            <li>
+                <span data-url="http://www.wakacje.pl/wczasy/hiszpania" data-dopelniacz="Hiszpanii">Hiszpania</span>
+            </li>
+            <li>
+                <span data-url="http://www.wakacje.pl/wczasy/turcja" data-dopelniacz="Turcji">Turcja</span>
+            </li>
+        </ol>
+
+        <br><br>
+
+        <div id="txt"></div>
+
+    </div>
+
+</body>
+</html>
