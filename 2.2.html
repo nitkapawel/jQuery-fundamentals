@@ -8,6 +8,7 @@
     <style>
         html, body { height: 100%; }
         form { background-color: #fafafa; padding: 20px 50px; margin-top: 50px; }
+        form.dark { background-color: #aaa; }
     </style>
 </head>
 <body>
@@ -18,15 +19,17 @@
     <form action="" class="container" method="post" name="f1" id="f1">
 
         <input value="" placeholder="Jak ci na imię?" class="input-lg" id="imie">
-        <div id="imieTxt"></div>
+        <input type="button" value="przełącz tło" id="toggleBackground" class="btn-default">
+
+        <div id="imieDiv"></div>
 
     </form>
 
-    <script>
+    <pre>
 
-        var $imieTxt = $('#imieTxt');
+        var $imieDiv = $('#imieDiv');
         $('#imie').on('keyup', function(e){
-            $imieTxt.text( 'Cześć ' + this.value );
+            $imieDiv.text( 'Cześć ' + this.value );
             console.info(e);
         });
 //        $('#imie').on('click', function(e){
@@ -46,7 +49,11 @@
             console.warn('delegate target: ', e.delegateTarget);
         });
 
-    </script>
+        $('#toggleBackground').on('click', function(){
+            $('#f1').toggleClass('dark');
+        });
+
+    </pre>
 
 </body>
 </html>

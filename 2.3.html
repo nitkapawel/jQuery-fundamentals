@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        html, body { height: 100%; }
+        form { background-color: #fafafa; padding: 20px 50px; margin-top: 50px; }
+        form.dark { background-color: #aaa; }
+    </style>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+<form action="" class="container" method="post" name="f1" id="f1">
+
+   <ul class="list-unstyled" id="lista">
+       <li>
+           <input type="button" class="btn btn-default" value="akcja">
+       </li>
+       <li>
+           <input type="button" class="btn btn-default" value="akcja">
+       </li>
+       <li>
+           <input type="button" class="btn btn-default" value="akcja">
+       </li>
+       <li>
+           <input type="button" class="btn btn-default" value="akcja">
+       </li>
+       <li>
+           <input type="button" class="btn btn-default" value="akcja">
+       </li>
+   </ul>
+
+</form>
+
+    <script>
+
+        $('#lista .btn').on('click', function(e){
+            e.stopPropagation();
+            console.log('event przypisany wprost do elementów');
+        });
+
+        $('#lista').on('click', '.btn', function(e){
+            console.info('oddelegowany event');
+        });
+
+    </script>
+
+</body>
+</html>

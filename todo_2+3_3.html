@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        form label {
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        form select, input[type="text"] {
+            box-sizing: border-box;
+            min-width: 200px;
+        }
+        form li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <script>
+        // tutaj zaczynamy pisać skrypt
+    </script>
+
+    <div class="container">
+
+        <div class="bg-info panel-body">
+            <br>
+            <ul>
+                <li>Zadanie polega na napisaniu skryptu walidacji formularza.</li>
+                <li>Pole imię oraz pole nazwisko musi mieć co najmniej 3 znaki i może zawierać tylko litery, spacje i myślniki</li>
+                <li>Pole e-mail musi być poprawnym adresem e-mail</li>
+                <li>Wybrany wiek musi być >= 18 lat</li>
+                <li>Checkbox ze zgodą musi być zaznaczony</li>
+                <li>
+                    W przypadku zarówno pozytywnej jak i negatywnej walidacji formularza, należy zablokować jego wysłanie.<br>
+                    Jeśli walidacja da wynik negatywny - wyświetl pod przyciskiem czerwony komunikat Informujący o błedach jakie wystąpiły.<br>
+                    Jeśli walidacja da wynik pozytywny - wyświetl pod przyciskiem zielony komunikat Informujący o tym, że wszystko jest ok.
+                </li>
+            </ul>
+        </div>
+
+        <br><br>
+
+        <form action="" method="post" name="f1" id="f1">
+            <ul class="list-unstyled">
+                <li>
+                    <label for="imie">Imię:</label>
+                    <input type="text" name="imie" id="imie" value="">
+                </li>
+                <li>
+                    <label for="nazwisko">Nazwisko:</label>
+                    <input type="text" name="nazwisko" id="nazwisko" value="">
+                </li>
+                <li>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" value="">
+                </li>
+                <li>
+                    <label for="wiek">Wiek:</label>
+                    <select name="wiek" id="wiek">
+                        <option value="12">12 lat</option>
+                        <option value="13">13 lat</option>
+                        <option value="14">14 lat</option>
+                        <option value="15">15 lat</option>
+                        <option value="16">16 lat</option>
+                        <option value="17">17 lat</option>
+                        <option value="18">18 lat</option>
+                        <option value="19">19 lat</option>
+                        <option value="20">20 lat</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="zgoda">Wyrażam zgodę:</label>
+                    <input type="checkbox" name="zgoda" id="zgoda" value="1">
+                </li>
+                <li style="text-align:center;width: 320px;">
+                    <input type="submit" value="Wyślij formularz" class="btn btn-primary">
+                </li>
+            </ul>
+        </form>
+
+    </div>
+
+</body>
+</html>
