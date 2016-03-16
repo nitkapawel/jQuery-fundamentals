@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.js"><\/script>')</script>
+
+    <div class="container">
+        <a href="http://www.id2it.com">Link 1</a>
+        <a href="http://www.id2it.com">Link 1</a>
+    </div>
+
+    <script>
+
+        // -----------------------------
+//        $.fn.kolorZielony = function() {
+//            this.css( "color", "green" );
+//        };
+//
+//        $( "a" ).kolorZielony();
+
+
+        // ----------------------------- chaining -----------------------------
+//        $.fn.kolorZielony = function() {5.1.html
+//            this.css( "color", "green" );
+//            return this;
+//        };
+//
+//        $( "a" ).kolorZielony().css('font-weight', 'bold');
+
+
+        // ----------------------------- bezpieczne przekazanie jQuery => $ -----------------------------
+//        (function ( $ ) {
+//            $.fn.kolorZielony = function () {
+//                this.css("color", "green");
+//                return this;
+//            };
+//        })( jQuery );
+//
+//
+//        $( "a" ).kolorZielony().css('font-weight', 'bold');
+
+
+
+        // ----------------------------- Iterowanie po elementach przez $.each (w razie konieczności odwołania się do właściwości elementu której nie można wyciągnąć z koelkcji (np. data()) -----------------------------
+//        (function ( $ ) {
+//            $.fn.kolorZielony = function () {
+//
+//                return this.each(function(i,v){
+//                    $(v).css("color", "green");
+//                });
+//
+//            };
+//        })( jQuery );
+//
+//
+//        $( "a" ).kolorZielony().css('font-weight', 'bold');
+
+
+        // ----------------------------- Ustawianie domyślnych opcji pluginu -----------------------------
+//        (function ( $ ) {
+//
+//            $.fn.kolorZielony = function (options) {
+//
+//                var opcje = $.extend({
+//                    // These are the defaults.
+//                    kolorTekstu: "#556b2f",
+//                    kolorTla: "white"
+//                }, options );
+//
+//                return this.each(function(i,v){
+//                    $(v).css({
+//                        color: opcje.kolorTekstu,
+//                        backgroundColor: opcje.kolorTla
+//                    });
+//                });
+//            };
+//        })( jQuery );
+//
+//
+//        $( "a" ).kolorZielony({
+//            kolorTekstu: 'blue'
+//        });
+
+
+        /*
+         *   DO PRZECZYTANIA
+         */
+
+        // https://learn.jquery.com/plugins/advanced-plugin-concepts/
+        // https://github.com/jquery-boilerplate/jquery-boilerplate/blob/master/src/jquery.boilerplate.js
+
+    </script>
+
+</body>
+</html>
